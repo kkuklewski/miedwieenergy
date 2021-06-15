@@ -1,0 +1,21 @@
+.video-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-mail a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .btn-phone a {
+      text-decoration: none;
+  }
+
+  .btn-phone:hover {
+      background-color: rgb(97, 97, 97);
+  }
+
+  .btn-phone:hover a {
+      color: white;
+  }

@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--    js-->
+    <!--    own css-->
+    <link rel="stylesheet" href="/scss/style.css">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body>
+
+    <script>
+        var vid = document.getElementById("myVideo");
+        vid.autoplay = true;
+        vid.load();
+    </script>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <img style="width: 35px; margin-right: 25px;" src="/img/artists/me-logo.svg" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Wydarzenia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Polecane</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Kontakt / Media</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!---->
+
+        <!--    -->
+        <div id="myCarousel" class="carousel heroPage slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <h2>Wydarzenia</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="video-fluid z-depth-1" autoplay loop muted>
+                        <source src="/img/artists/yacht.mp4" type="video/mp4" />
+                      </video>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Miedwie Energy</h1>
+                            <p>nowa inicjatywa, skierowana na promowanie i rozwój oferty turystycznej, kulturalnej</p>
+                            <!-- <p><a class="btn btn-lg btn-primary" href="#events">Sprawdź wydarzenia</a></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="video-fluid z-depth-1" autoplay loop muted>
+                        <source src="/img/artists/party.mp4" type="video/mp4" />
+                      </video>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>A także rozrywkowej</h1>
+                            <p>W okolicy jeziora Miedwie poprzez organizację licznych wydarzeń kulturalnych</p>
+                            <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="video-fluid z-depth-1" autoplay loop muted>
+                        <source src="/img/artists/rents.mp4" type="video/mp4" />
+                      </video>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Restauracja Weranda</h1>
+                            <p>Z pasji do gotowania.</p>
+                            <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div id="events" class="container">
+                <div class="flex row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/pawel_domagala.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Stand Up Miedwie! vol.1
+                                    Paweł Chałupka, Zalewski, Kutek </h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>18 lipca, 2021</h6>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+                                    dolorum est odit pariatur praesentium tenetur</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/domagala.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Paweł Domagała</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>01 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/sobel.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Sobel</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>20 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/daniec.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Stand Up'owy Kabareton
+                                    Marcin Daniec, Jerzy Kryszak, Irek Krosny</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>07 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/krajewski.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Stand Up Miedwie vol.2
+                                    Błażej Krajewski, Piotrek Szumowski, Darek Gadowski</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>12 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/montana.jpeg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Malik Montana, Mr. Polska</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>20 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/slawek.jpeg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Sławomir</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>27 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/socha.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Stand Up Miedwie! vol.3
+                                    Mateusz Socha</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>28 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/golec.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Szafa Gra / Kabaret Buffo i Golec uOrkiestra</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>29 sierpnia, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/sokol.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">Sokół</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>04 września, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--koncert-->
+                    <div class="col content">
+                        <div class="card shadow-sm">
+                            <img src="./img/artists/problem.jpg" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h4 class="testClass">PRO8L3M</h4>
+                                <div class="d-inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-calendar-event me-2 text-danger"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg>
+                                    <h6>05 września, 2021</h6>
+                                </div>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Facebook</button>
+                                        <button type="button" class="btn btn-sm btn-warning">Kup Bilet</button>
+                                    </div>
+                                    <small class="text-muted">Wydarzenie</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./img/artists/me-logo.svg" alt="" width="72" height="57">
+            <h1 class="display-5 fw-bold">Kontakt</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">to nowa inicjatywa, skierowana na promowanie i rozwój oferty turystycznej, kulturalnej, a także rozrywkowej w okolicy jeziora Miedwie poprzez organizację licznych wydarzeń kulturalnych, sportowo-rekreacyjnych i rozrywkowo-edukacyjnych.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3 btn-mail"><a href="mailto:info@miedwie.energy">Napisz e-mail</a></button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 btn-phone"><a href="tel:668 488 230">Zadzwoń</a></button>
+              </div>
+            </div>
+          </div> -->
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2021 Miedwie Energy &middot; <a href="https://a1v.pl">Created by A1VStudio</a> &middot; <a
+                    href="https://a1v.pl">Terms</a></p>
+        </footer>
+    </main>
+
+    <script src="/js/loadmore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
